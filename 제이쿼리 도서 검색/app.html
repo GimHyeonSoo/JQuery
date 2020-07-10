@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>jQuery Mobile</title>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+   <div data-role="page" id="page1" data-title="첫번째 페이지">
+      <div data-role="header">
+         <a href="#page2" class="ui-btn-right">My</a>
+         <h1>6월 1주 베스트셀러</h1>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview" data-inset="true">
+            <li data-role="listdivider">Yes24 도서 순위</li>
+            <li><a href="#a1">종합</a></li>
+            <li><a href="#a2">소설</a></li>
+        <li><a href="#a3">어린이</a></li>
+        <li><a href="#a4">인문</a></li>
+         </ul>
+      <ul data-role="listview" data-inset="true">
+            <li data-role="listdivider">교보문고 도서 순위</li>
+            <li><a href="#b1">종합</a></li>
+            <li><a href="#b2">소설</a></li>
+        <li><a href="#b3">어린이</a></li>
+        <li><a href="#b4">인문</a></li>
+         </ul>
+      <ul data-role="listview" data-inset="true">
+            <li data-role="listdivider">알라딘 도서 순위</li>
+            <li><a href="#c1">종합</a></li>
+            <li><a href="#c2">소설</a></li>
+        <li><a href="#c3">어린이</a></li>
+        <li><a href="#c4">인문</a></li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013  이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="a1" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>YES24 종합 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16273522">
+                  <img src="a1.jpg" style="width: 100%; height:100%;"/>
+                  <h3>더 해빙</h3>
+                  <p>작가: 이서윤 외 1인</p>
+                  <p></p>
+               </a>
+            </li>
+        <li data-role="list-divider">2위
+           <p class="ui-li-aside">2020/06/01</p>
+        </li>
+        <li>
+          <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358456">
+            <img src="a2.png">
+            <h3>애쓰지 않고 편안하게</h3>
+            <p>작가 : 김수현</p>
+            <p></p>
+          </a>
+        </li>
+        <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16356650">
+                  <img src="a3.png">
+                  <h3>코로나 투자 전쟁</h3>
+                  <p>작가 : 정채진 외 4인</p>
+                  <p></p>
+               </a>
+            </li>
+        <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16355702">
+                  <img src="a4.png">
+                  <h3>당근유치원(양장본 Hard Cover)</h3>
+                  <p>작가 : 안녕달</p>
+                  <p></p>
+               </a>
+            </li>
+        <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16362118">
+                  <img src="a5.png">
+                  <h3>마법천자문 48</h3>
+                  <p>작가 : 김현수</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+    <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="a2" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>YES24 소설 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357295">
+                  <img src="b1.png">
+                  <h3>기억 1</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357298">
+                  <img src="b2.png">
+                  <h3>기억 2</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16343976">
+                  <img src="b4.png">
+                  <h3>소년이 온다 특별한정판(양장)</h3>
+                  <p>작가 : 한강</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16367438">
+                  <img src="b3.png">
+                  <h3>시선으로부터,</h3>
+                  <p>작가 : 정세랑</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16319880">
+                  <img src="b5.png">
+                  <h3>2020 제11회 젊은작가상 수상작품집</h3>
+                  <p>작가 : 강화길 외 6명</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="a3" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>YES24 어린이 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16362118">
+                  <img src="c1.png">
+                  <h3>마법천자문 48</h3>
+                  <p>작가 : 김현수</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358186">
+                  <img src="c2.png">
+                  <h3>흔한남매 안 흔한 일기 2</h3>
+                  <p>작가 : 강효미</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16361415">
+                  <img src="c3.png">
+                  <h3>Go Go 카카오프렌즈 14</h3>
+                  <p>작가 : 김미영</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16341237">
+                  <img src="c4.png">
+                  <h3>장군이네 떡집_만복이네 떡집 2</h3>
+                  <p>작가 : 김리리</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16341239">
+                  <img src="c5.png">
+                  <h3>소원 떡집_만복이네 떡집 3</h3>
+                  <p>작가 : 김리리</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="a4" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>YES24 인문 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16033672">
+                  <img src="d1.png">
+                  <h3>내가 원하는 것을 나도 모를 때</h3>
+                  <p>작가 : 전승환</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=15875790">
+                  <img src="d2.png">
+                  <h3>지적 대화를 위한 넓고 얕은 지식 O</h3>
+                  <p>작가 : 채사장</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16283133">
+                  <img src="d3.png">
+                  <h3>타인의 해석</h3>
+                  <p>작가 : 말콤 글래드웰</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=14027973">
+                  <img src="d4.png">
+                  <h3>당신이 옳다</h3>
+                  <p>작가 : 정혜신</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=9780781">
+                  <img src="d5.png">
+                  <h3>사피엔스</h3>
+                  <p>작가 : 유발 하라리</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="b1" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>교보문고 종합 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16273522">
+                  <img src="a1.jpg">
+                  <h3>더 해빙</h3>
+                  <p>작가 : 이서윤 외 1명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16356059">
+                  <img src="aa2.png">
+                  <h3>코로나 이후의 세계: 블룸버그 선정 세계 1위</h3>
+                  <p>작기 : 제이슨 솅커</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358456">
+                  <img src="a2.png">
+                  <h3>애쓰지 않고 편안하게</h3>
+                  <p>작가 : 김수현</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16356650">
+                  <img src="a3.png">
+                  <h3>코로나 투자 전쟁</h3>
+                  <p>작가 :  정채진 외 4명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16367867">
+                  <img src="aa5.png">
+                  <h3>맛있게 살 빠지는 고단백 저탄수화물..</h3>
+                  <p>작가 : 미니 박지우</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="b2" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>교보문고 소설 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357295">
+                  <img src="b1.png">
+                  <h3>기억 1</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16343976">
+                  <img src="b4.png">
+                  <h3>소년이 온다 특별한정판(양장)</h3>
+                  <p>작가 : 한강</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357298">
+                  <img src="b2.png">
+                  <h3>기억 2</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16367438">
+                  <img src="b3.png">
+                  <h3>시선으로부터,</h3>
+                  <p>작가 : 정세랑</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=12757598">
+                  <img src="bb5.png">
+                  <h3>데미안</h3>
+                  <p>작가 : 헤르만 헤세</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="b3" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>교보문고 어린이 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16362118">
+                  <img src="c1.png">
+                  <h3>마법천자문 48</h3>
+                  <p>작가 : 김현수</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16361415">
+                  <img src="c3.png">
+                  <h3>Go Go 카카오프렌즈 14</h3>
+                  <p>작가 : 김미영</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358186">
+                  <img src="c2.png">
+                  <h3>흔한남매 안 흔한 일기 2</h3>
+                  <p>작가 : 강효미</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16297712">
+                  <img src="cc4.png">
+                  <h3>흔한 남매 4</h3>
+                  <p>작가 : 흔한남매(..외 1명)</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16341237">
+                  <img src="c4.png">
+                  <h3>장군이네 떡집_만복이네 떡집 2</h3>
+                  <p>작가 : 김리리</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="b4" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>교보문고 인문 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16033672">
+                  <img src="d1.png">
+                  <h3>내가 원하는 것을 나도 모를 때</h3>
+                  <p>작가 : 전승환</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16345775">
+                  <img src="dd2.png">
+                  <h3>설민석의 책 읽어드립니다</h3>
+                  <p>작가 : 설민석</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16031209">
+                  <img src="dd3.png">
+                  <h3>큰별쌤 최대성의 별 한국사</h3>
+                  <p>작가 : 최태성</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16235424">
+                  <img src="dd4.png">
+                  <h3>큰별쌤 최태성의 별별 한국사</h3>
+                  <p>작가 : 최태성</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=15875790">
+                  <img src="d2.png">
+                  <h3>지적 대화를 위한 넓고 얕은 지식 0</h3>
+                  <p>작가 : 채사장</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="c1" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>알라딘 종합 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16367438">
+                  <img src="b3.png">
+                  <h3>시선으로부터,</h3>
+                  <p>작가 : 정세랑</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16343976">
+                  <img src="b4.png">
+                  <h3>소년이 온다 특별한정판(양장)</h3>
+                  <p>작가 : 한강</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16273522">
+                  <img src="a1.jpg">
+                  <h3>더 해빙</h3>
+                  <p>작가 : 이서윤 외 1명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16368218">
+                  <img src="aaa4.png">
+                  <h3>만화 인소의 법칙 1(함단이 캐릭터)</h3>
+                  <p>작가 : 아현 만화 외 1명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358456">
+                  <img src="a2.png">
+                  <h3>애쓰지 않고 편안하게</h3>
+                  <p>작가 : 김수현</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="c2" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>알라딘 소설 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/09/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16367438">
+                  <img src="b3.png">
+                  <h3>시선으로부터,</h3>
+                  <p>작가 : 정세랑</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16343976">
+                  <img src="b4.png">
+                  <h3>소년이 온다 특별한정판(양장)</h3>
+                  <p>작가 : 한강</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16319880">
+                  <img src="b5.png">
+                  <h3>2020 제 11회 젊은작가상 수상작품집</h3>
+                  <p>작가 : 강화길 외 6명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357295">
+                  <img src="b1.png">
+                  <h3>기억 1</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357298">
+                  <img src="b2.png">
+                  <h3>기억 2</h3>
+                  <p>작가 : 베르나르 베르베르</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="c3" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>알라딘 어린이 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16362118">
+                  <img src="c1.png">
+                  <h3>마법천자문 48</h3>
+                  <p>작가 : 김현수</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16341237">
+                  <img src="c4.png">
+                  <h3>장군이네 떡집_만복이네 떡집 2</h3>
+                  <p>김리리</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16341239">
+                  <img src="c5.png">
+                  <h3>소원 떡집_만복이네 떡집 3</h3>
+                  <p>작가 : 김리리</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16361415">
+                  <img src="c3.png">
+                  <h3>Go Go 카카오프렌즈 14</h3>
+                  <p>작가 : 김미영</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=6289560">
+                  <img src="ccc5.png">
+                  <h3>만복이네 떡집</h3>
+                  <p>작가 : 김리리</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013 이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="c4" data-title="두번째 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>알라딘 인문 도서 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16348871">
+                  <img src="ddd3.png">
+                  <h3>이상하고 자유로운 할머니가 되고 싶어</h3>
+                  <p>작가 : 박서영</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357320">
+                  <img src="ddd1.png">
+                  <h3>이야기의 탄생</h3>
+                  <p>작가 : 윌 스토</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16339545">
+                  <img src="ddd2.png">
+                  <h3>트라우머 사전</h3>
+                  <p>작가 : 1안젤라 애커만 외 1명</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=15875790">
+                  <img src="ddd4.png">
+                  <h3>지적 대화를 위한 넓고 얕은 지식 0</h3>
+                  <p>작가 : 채사장</p>
+                  <p></p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16329709">
+                  <img src="ddd5.png">
+                  <h3>공간이 만든 공간</h3>
+                  <p>작가 : 유현준</p>
+                  <p></p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 1605013   이름 : 김현수</p>
+      </div>
+   </div>
+   <div data-role="page" id="page2" data-title="마이 페이지">
+      <div data-role="header" data-add-back-btn="true">
+         <h1>내가 사고싶은 책 순위</h1>
+         <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+      </div>
+      <div data-role="content">
+         <ul data-role="listview">
+            <li data-role="list-divider">1위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16358456">
+                  <img src="h1.png">
+                  <h3>애쓰지 않고 편안하게</h3>
+                  <p>작가 : 김수현</p>
+                  <p>가격 : 13,500원</p>
+               </a>
+            </li>
+            <li data-role="list-divider">2위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=13453869">
+                  <img src="h2.png">
+                  <h3>하고 싶은 대로 살아도 괜찮아</h3>
+                  <p>작가 : 윤정은</p>
+                  <p>가격 : 11,700원</p>
+               </a>
+            </li>
+            <li data-role="list-divider">3위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16214298">
+                  <img src="h3.png">
+                  <h3>1cm 다이빙</h3>
+                  <p>작가 : 태수,문정</p>
+                  <p>가격 : 12,150원</p>
+               </a>
+            </li>
+            <li data-role="list-divider">4위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16362167">
+                  <img src="h4.png">
+                  <h3>보통의 언어들</h3>
+                  <p>작가 : 김이나</p>
+                  <p>가격 : 13,050원</p>
+               </a>
+            </li>
+            <li data-role="list-divider">5위
+                <p class="ui-li-aside">2020/06/01</p>
+            </li>
+            <li>
+               <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=13394898">
+                  <img src="h5.png">
+                  <h3>곰돌이 푸, 행복한 일은 매일 있어</h3>
+                  <p>작가 : 곰돌이 푸</p>
+                  <p>가격 : 10,800원</p>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <p>학번 : 160513 /  이름 : 김현수</p>
+      </div>
+   </div>
+</body>
+</html>
